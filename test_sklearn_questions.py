@@ -16,7 +16,7 @@ from sklearn_questions import KNearestNeighbors
 from sklearn_questions import MonthlySplit
 
 
-@pytest.mark.parametrize("k", [1, 3, 5, 7]) #
+@pytest.mark.parametrize("k", [1, 3, 5, 7])
 def test_one_nearest_neighbor_match_sklearn(k):
     X, y = make_classification(n_samples=200, n_features=20,
                                random_state=42)
