@@ -153,11 +153,11 @@ class MonthlySplit(BaseCrossValidator):
     """Cross-validator splitting data by successive months."""
 
     def __init__(self, time_col='index'):
-        """initialisation"""
+        """Initialise."""
         self.time_col = time_col
 
     def __repr__(self):
-        """representation of the object"""
+        """Representate the object."""
         return f"MonthlySplit(time_col='{self.time_col}')"
 
     def _get_time_index(self, X, y):
